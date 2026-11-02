@@ -1,0 +1,19 @@
+# secrets
+/.env
+# raw data, grounder stores, models, runs (see README: Setup / Data)
+/datasets/
+/stores/
+/models/
+/outputs/
+/logs/
+/hf_cache/
+# generated from the shipped id lists and by the pipeline
+data/tkgqa/splits/*/*.jsonl
+data/tkgqa/rl/
+data/tkgqa/stage1/
+data/tkgqa/stage2/
+data/tkgqa/sft/
+# python
+__pycache__/
+*.pyc
+*.egg-info/

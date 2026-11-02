@@ -1,0 +1,30 @@
+{
+  "dataset": "MultiTQ",
+  "grounding_ceiling": [
+    "MultiTQ:1002948",
+    "MultiTQ:1068959",
+    "MultiTQ:1073207",
+    "MultiTQ:1081939",
+    "MultiTQ:1112586",
+    "MultiTQ:1125070",
+    "MultiTQ:1132688",
+    "MultiTQ:1256106",
+    "MultiTQ:1341474",
+    "MultiTQ:1359225",
+    "MultiTQ:1359493"
+  ],
+  "grounding_ceiling_definition": "questions with no successful rollout among 8 Stage 1 rollouts (T 0.7) where some failed rollout is a grounding recall failure: no top-5 grounding of the policy's FINDs reaches the gold answer or the reference entity (a rollout that never wrote the answer or reference FIND is a policy failure, not a recall failure); found on a 180-question Stage 2 collection. Left out of the Stage 2 SFT set: there is no avoidance rule to teach.",
+  "operation_ceiling": [],
+  "operation_ceiling_definition": "questions the temporal operations cannot express (none identified for MultiTQ yet)",
+  "gold_finer_than_question": {
+    "heldout": [],
+    "test5000": [
+      "MultiTQ:3048336"
+    ],
+    "rl": [],
+    "stage2": [
+      "MultiTQ:1064811"
+    ]
+  },
+  "gold_finer_than_question_definition": "gold time answer finer than the granularity the question asks for ('In which year ...' with a gold YYYY-MM-DD); a scoring artefact, not a decision to correct"
+}
