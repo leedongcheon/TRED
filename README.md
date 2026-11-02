@@ -1,4 +1,4 @@
-# TRED: Execution-Grounded Hindsight Self-Distillation for Temporal Knowledge Graph Question Answering
+# Execution-Grounded Hindsight Self-Distillation for Temporal Knowledge Graph Question Answering
 
 **TRED** (Temporal Reasoning learned via Execution-grounded hindsight self-Distillation) for temporal knowledge graph
 question answering (TKGQA), on MultiTQ and TimelineCronQR.
@@ -60,9 +60,6 @@ OPENAI_API_RETRY_DELAY=1.0
 # On a machine without internet access, once the models are in the Hugging Face cache.
 # HF_HUB_OFFLINE=1
 ```
-
-API spending stops at a cost cap per step: Stage 1 teacher runs $0.5 + $3.5 (`CAP_PILOT`, `CAP_MAIN`), Stage 2 labels
-$7 (`CAP_LABEL`), at GPT-4.1-mini prices (`PRICE_IN`, `PRICE_CACHED`, `PRICE_OUT` per 1M tokens).
 
 ## Data
 
