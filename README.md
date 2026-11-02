@@ -10,6 +10,8 @@ TRED enables an LLM agent to perform multi-step temporal reasoning through execu
 
 An analyzer transforms this evidence into episode-level and decision-level hindsight skills, which guide on-policy self-distillation without treating proposed corrections as ground-truth actions.
 
+![TRED Architecture](figures/tred_architecture.png)
+
 TRED is trained in three stages:
 
 | Stage | Description |
