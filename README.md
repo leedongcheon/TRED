@@ -45,7 +45,7 @@ The base model and BGE-M3 encoder are downloaded from Hugging Face when first us
 
 ## Datasets
 
-TRED supports **MultiTQ** and **TimelineCronQ-R**.
+TRED supports **MultiTQ** and **TimelineCronQR**.
 
 Place the corresponding KG and question files under:
 
@@ -83,7 +83,7 @@ DATASET=MultiTQ bash scripts/stage2/run.sh
 DATASET=MultiTQ ARM=tred bash scripts/stage3/run.sh
 ```
 
-For TimelineCronQ-R, replace `DATASET=MultiTQ` with `DATASET=TimelineCronQR`.
+For TimelineCronQR, replace `DATASET=MultiTQ` with `DATASET=TimelineCronQR`.
 
 To train the outcome-only GRPO baseline:
 
